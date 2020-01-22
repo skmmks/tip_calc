@@ -9,16 +9,20 @@
   </head>
   <body>
     <div class="container">
+      <h1>Tip Calculator</h1>
       <div id="calculator">
         <form>
           <p>How much was the tab?</p>
           <input id="totalBill" type="text" placeholder="Amount" />
           <p>How was the service?</p>
-          <input
-            id="serviceQuality"
-            type="text"
-            placeholder="Service quality"
-          />
+          <p>
+            <select id="serviceQuality">
+              <option disabled selected value="0">Please Select</option>
+              <option value="0.2">Good 20%</option>
+              <option value="0.15">Normal 15%</option>
+              <option value="0.1">Bad 10%</option>
+            </select>
+          </p>
           <p>How many people?</p>
           <input id="totalPeople" type="number" />
           <div><button type="button" id="calculate">Calculate!</button></div>
